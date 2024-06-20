@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  
+  <meta charset="UTF-8">
+
+  <title>NOVIA</title>
+
+  <style>
+    html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            background-color: pink;
+        }
+    button {
+            font-size: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 60px;
+            border-radius: 15px; /* Bordes redondeados */
+            background-color: white; /* Color amarillo */
+            border: black; /* Sin borde */
+        }
+    #mensaje {
+                margin: 10px;
+                margin-left: 10px;
+                font-size: 20px;
+                color: blue;
+            }
+      </style>
+
+</head>
+
+<body>
+
+<br>
+<h2 id="titulo">Mensajito para la novia:</h2>
+  <div id="mensaje">Hacer clic en el botoncito....</div>
+  <br>
+  <button id="x" onclick="cambiarContenido()">Botoncito</button>
+
+  <script>
+    function cambiarContenido() {
+      document.getElementById("mensaje").innerHTML = "¡Muakkkkkkkkk! <span id='icono'>&#128536;</span> <span id='icono'>&#128536;</span> <span id='icono'>&#128536;</span>";
+      document.getElementById("titulo").style.display = "none";
+      document.getElementById("x").style.display = "none";
+    }
+
+    </script>
+  </body>
+</html>
